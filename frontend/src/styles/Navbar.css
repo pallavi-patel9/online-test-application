@@ -1,0 +1,143 @@
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a0ca3;
+    --primary-light: #f0f5ff;
+    --accent: #f72585;
+    --accent-dark: #d91a6d;
+    --dark: #1a1a2e;
+    --dark-light: #2d2d44;
+    --light: #f8f9fa;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+}
+
+#nav-container {
+    padding: 0px;
+} 
+
+.navbar-custom {
+    background: linear-gradient(135deg, var(--light), var(--primary-light));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-custom.scrolled {
+    background: var(--light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.brand-primary {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.brand-dark {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    /* color: var(--primary-dark); */
+    transform: translateY(-2px);
+}
+
+.btn-nav {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: var(--light);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+.btn-primary-custom {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 37, 133, 0.4);
+}
+
+.logout-link {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.logout-link:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 1rem 0;
+        background: var(--light);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .btn-nav {
+        display: block;
+        margin: 0.5rem auto;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .navbar-custom {
+        padding: 0.75rem 0;
+    }
+}

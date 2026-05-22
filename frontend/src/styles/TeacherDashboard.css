@@ -1,0 +1,170 @@
+/* StudentDashboard.css */
+/* Icon styling */
+.white-icons {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.black-icons {
+  font-size: 1.5rem;
+  color: #1a1a1a; /* Fixed to actual black for visibility */
+  transition: color 0.3s ease;
+}
+
+.admin-icons {
+  font-size: 1.25rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Hover effects for icons */
+.white-icons:hover, .black-icons:hover, .admin-icons:hover {
+  color: #007bff;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* General dashboard styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #1c2526 0%, #2c3e50 100%);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Stats cards */
+.bg-primary, .bg-success, .bg-warning {
+  transition: opacity 0.3s ease;
+}
+
+.bg-primary:hover, .bg-success:hover, .bg-warning:hover {
+  opacity: 0.9;
+}
+
+/* Recent activity styling */
+.list-group-item {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+/* 
+.list-group-item:hover {
+  background-color: #f8f9fa;
+} */
+
+/* Typography */
+h2, h3, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .white-icons, .black-icons, .admin-icons {
+      font-size: 1.1rem;
+  }
+  
+  .card-body {
+      padding: 1rem;
+  }
+  
+  .nav-link {
+      padding: 8px 12px;
+  }
+}
+.student-dashboard {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Layout Structure */
+.container-fluid {
+  padding: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background: linear-gradient(180deg, #1c2526 0%, #2c3e50 100%);
+  transition: all 0.3s ease;
+}
+
+/* Main Content */
+main {
+  background: #f8f9fa;
+  min-height: calc(100vh - 56px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: #007bff;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    z-index: 1000;
+  }
+  
+  .navbar .btn-link {
+    font-size: 1.1rem;
+  }
+}

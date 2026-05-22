@@ -1,0 +1,223 @@
+/* Custom styles for RegisterForm.jsx */
+:root {
+    --student-color: #3498db;
+    --teacher-color: #16a085;
+    --admin-color: #e74c3c;
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 1.5rem;
+}
+
+.card-header.bg-gradient {
+    background: limegreen;
+}
+
+.card-header.bg-admin {
+    background: linear-gradient(to right, var(--admin-color), #c0392b) !important;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.section-title i {
+    color: var(--student-color);
+}
+
+.section-title.text-teacher i {
+    color: var(--teacher-color);
+}
+
+.section-title.text-admin i {
+    color: var(--admin-color);
+}
+
+.form-control:focus {
+    border-color: var(--student-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+
+.form-control:focus.teacher {
+    border-color: var(--teacher-color);
+    box-shadow: 0 0 0 0.2rem rgba(22, 160, 133, 0.25);
+}
+
+.form-control:focus.admin {
+    border-color: var(--admin-color);
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25);
+}
+
+.role-option {
+    padding: 1rem;
+    border: 2px solid #dee2e6;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.role-option i {
+    color: #7f8c8d;
+}
+
+.role-option.active-student {
+    border-color: var(--student-color);
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.role-option.active-student i {
+    color: var(--student-color);
+}
+
+.role-option.active-teacher {
+    border-color: var(--teacher-color);
+    background-color: rgba(22, 160, 133, 0.1);
+}
+
+.role-option.active-teacher i {
+    color: var(--teacher-color);
+}
+
+.role-option.active-admin {
+    border-color: var(--admin-color);
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.role-option.active-admin i {
+    color: var(--admin-color);
+}
+
+.btn-student {
+    background: linear-gradient(to right, var(--student-color), var(--teacher-color));
+    border: none;
+}
+
+.btn-teacher {
+    background-color: var(--teacher-color);
+    border-color: var(--teacher-color);
+}
+
+.btn-admin {
+    background: linear-gradient(to right, var(--admin-color), #c0392b);
+    border: none;
+}
+
+.btn-student:hover, .btn-teacher:hover, .btn-admin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.text-student {
+    color: var(--student-color);
+}
+
+.text-teacher {
+    color: var(--teacher-color);
+}
+
+.text-admin {
+    color: var(--admin-color);
+}
+
+.badge.bg-teacher {
+    background-color: #e0f2f1;
+    color: var(--teacher-color);
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mb-4 {
+    animation: fadeIn 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+}
+
+.fa-eye {
+    color: #7f8c8d;
+    font-size: 1rem !important;
+}
+
+.fa-eye-slash {
+    color: #7f8c8d;
+    font-size: 1rem !important;
+}
+
+.expertise-btn {
+    background-color: limegreen;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.expertise-btn:hover {
+    background-color: green;
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.expertise-data {
+    background-color: limegreen;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem; 
+}
+
+.expertise-data-btn {
+    font-size: 1rem !important;
+}
+
+.expertise-data-btn:hover, .expertise-data:hover {
+    background-color: green;
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.register-btn:hover {
+    background-color: limegreen;
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+i {
+    font-size: 1.5rem !important;
+}
+
+ 

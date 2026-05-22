@@ -1,0 +1,247 @@
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a0ca3;
+    --primary-light: #f0f5ff;
+    --accent: #f72585;
+    --accent-dark: #d91a6d;
+    --dark: #1a1a2e;
+    --dark-light: #2d2d44;
+    --light: #f8f9fa; 
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.btn-primary-custom {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 37, 133, 0.3);
+}
+
+.btn-outline-custom {
+    border-color: white;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: white;
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--accent);
+}
+
+.section-subtitle {
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    padding: 2rem;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background-color: var(--primary);
+    /* color: var(--primary); */
+    font-size: 1.75rem;
+}
+
+.feature-card:hover .feature-icon {
+    background-color: var(--accent);
+    color: white;
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-light);
+}
+
+.process-step {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 3rem;
+}
+
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/pattern.png') center/cover;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.img-fluid-rounded {
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.highlight-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.security-badge {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.study-mode-card {
+    border-left: 4px solid var(--primary);
+}
+
+.feature-icon-container {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgba(67, 97, 238, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.study-section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.bi {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,46 @@
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a0ca3;
+    --primary-light: #f0f5ff;
+    --accent: #f72585;
+    --accent-dark: #d91a6d;
+    --dark: #1a1a2e;
+    --dark-light: #2d2d44;
+    --light: #f8f9fa;
+    --gray: #6c757d;
+    --gray-light: #e9ecef; 
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5rem 0 2rem;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    transition: all 0.3s ease;
+    margin-right: 0.5rem;
+}
+
+.social-icon:hover {
+    background-color: var(--accent);
+    transform: translateY(-3px);
+}

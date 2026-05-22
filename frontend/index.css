@@ -1,0 +1,80 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fullscreen styles */
+.exam-player-container {
+transition: all 0.3s ease;
+}
+
+:fullscreen .exam-player-container,
+:-webkit-full-screen .exam-player-container,
+:-moz-full-screen .exam-player-container,
+:-ms-fullscreen .exam-player-container {
+width: 100vw;
+height: 100vh;
+margin: 0;
+border-radius: 0;
+overflow-y: auto;
+}
+
+:fullscreen .card-body,
+:-webkit-full-screen .card-body,
+:-moz-full-screen .card-body,
+:-ms-fullscreen .card-body {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* Modal styles */
+.modal {
+backdrop-filter: blur(2px);
+}
+.modal.show {
+display: block;
+}
+
+/* Fullscreen button icon */
+.bi-fullscreen, .bi-fullscreen-exit {
+font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.card-header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-header > div {
+  margin-top: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
+}
+}
+
+/* Question styling */
+.list-group-item.active {
+background-color: #0d6efd;
+border-color: #0d6efd;
+}
+
+.list-group-item {
+text-align: left;
+transition: all 0.2s;
+}
+
+.list-group-item:hover {
+background-color: #f8f9fa;
+}
+
+.hide-navbar-sidebar .navbar,
+.hide-navbar-sidebar .sidebar {
+  display: none !important;
+}
