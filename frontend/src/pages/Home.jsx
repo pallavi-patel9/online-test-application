@@ -59,19 +59,19 @@ const Home = () => {
                     </div>
                     <div className="row justify-content-center align-items-center">
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="/assets/university1.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/University1.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="/assets/university2.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/University2.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="/assets/university3.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/University3.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="/assets/university4.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '150px' }} />
+                            <img src="/assets/University4.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '150px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center">
-                            <img src="/assets/university5.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/University5.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                     </div>
                 </div>
