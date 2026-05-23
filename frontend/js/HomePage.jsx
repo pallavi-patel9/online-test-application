@@ -30,7 +30,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="../../public/hero-illustration.jpg" alt="Hero Illustration" />
+          <img src="/hero-illustration.jpg" />
         </div>
       </section>
 
@@ -39,7 +39,7 @@ const HomePage = () => {
         <div className="feature-cards">
           <div className="card-feature">
             <div className="feature-icon">
-              <img src="../../public/secure-icon.jpg" alt="Secure Exams" />
+             <img src="/secure-icon.jpg" />
             </div>
             <h3>Secure Exams</h3>
             <p>End-to-end encryption, identity checks, and AI-based proctoring ensure full test integrity.</p>
@@ -47,7 +47,7 @@ const HomePage = () => {
 
           <div className="card-feature">
             <div className="feature-icon">
-              <img src="../../public/offline-icon.jpg" alt="Offline Support" />
+              <img src="/offline-icon.jpg"/>
             </div>
             <h3>Offline Support</h3>
             <p>Allow students to take exams without internet; data syncs automatically when reconnected.</p>
@@ -55,7 +55,7 @@ const HomePage = () => {
 
           <div className="card-feature">
             <div className="feature-icon">
-              <img src="../../public/analytics-icon.jpg" alt="Detailed Analytics" />
+              <img src="/analytics-icon.jpg" />
             </div>
             <h3>Detailed Analytics</h3>
             <p>Get real-time insights into test progress, student performance, and system metrics.</p>
@@ -63,7 +63,7 @@ const HomePage = () => {
 
           <div className="card-feature">
             <div className="feature-icon">
-              <img src="../../public/interactive-icon.jpg" alt="Interactive Questions" />
+              <img src="/interactive-icon.jpg"/>
             </div>
             <h3>Interactive Questions</h3>
             <p>Supports MCQs, coding editors, drag-and-drop, and diagram-based assessments.</p>
@@ -71,7 +71,7 @@ const HomePage = () => {
 
           <div className="card-feature">
             <div className="feature-icon">
-              <img src="../../public/realtime-icon.jpg" alt="Real-Time Monitoring" />
+              <img src="/realtime-icon.jpg"/>
             </div>
             <h3>Real-Time Monitoring</h3>
             <p>Live invigilation, test monitoring, and instant updates through WebSocket technology.</p>
@@ -79,7 +79,7 @@ const HomePage = () => {
 
           <div className="card-feature">
             <div className="feature-icon">
-              <img src="../../public/rolebased-icon.jpg" alt="Role-Based Panels" />
+              <img src="/rolebased-icon.jpg"/>
             </div>
             <h3>Role-Based Panels</h3>
             <p>Separate dashboards for students, teachers, and admins for streamlined control.</p>
@@ -115,7 +115,7 @@ const HomePage = () => {
     <div className="testimonial-card">
       <blockquote>
         <div className="testi-img">
-          <img src="../../public/Student.jpg" alt="" />
+          <img src="/Student.jpg" />
         </div>
         <div className="Testi-desc">
         "This platform transformed how we conduct online assessments."
@@ -126,7 +126,7 @@ const HomePage = () => {
     <div className="testimonial-card">
     <blockquote>
         <div className="testi-img">
-          <img src="../../public/Student.jpg" alt="" />
+          <img src="/Student.jpg" />
         </div>
         <div className="Testi-desc">
         "This platform transformed how we conduct online assessments."
@@ -137,7 +137,7 @@ const HomePage = () => {
     <div className="testimonial-card">
     <blockquote>
         <div className="testi-img">
-          <img src="../../public/Student.jpg" alt="" />
+          <img src="/Student.jpg" alt="" />
         </div>
         <div className="Testi-desc">
         "This platform transformed how we conduct online assessments."
@@ -148,7 +148,7 @@ const HomePage = () => {
     <div className="testimonial-card">
     <blockquote>
         <div className="testi-img">
-          <img src="../../public/Student.jpg" alt="" />
+          <img src="/Student.jpg" alt="" />
         </div>
         <div className="Testi-desc">
         "This platform transformed how we conduct online assessments."
@@ -163,7 +163,7 @@ const HomePage = () => {
       <section className="video-demo">
         <h2>Watch a Demo</h2>
         <video width="100%" height="600" controls>
-          <source src="../../public/video-demo.mp4" type="video/mp4" />
+          <source src="/video-demo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
@@ -184,23 +184,23 @@ const HomePage = () => {
 
       <div className="tech-icons">
         <div className="tech-icon">
-          <img src="../../public/react.png" alt="React" />
+          <img src="/react.png" alt="React" />
           <span>React</span>
         </div>
         <div className="tech-icon">
-          <img src="../../public/node.jpeg" alt="Node.js" />
+          <img src="/node.jpeg" alt="Node.js" />
           <span>Node.js</span>
         </div>
         <div className="tech-icon express">
-          <img src="../../public/express.png" alt="Express" />
+          <img src="/express.png" alt="Express" />
           <span>Express</span>
         </div>
         <div className="tech-icon">
-          <img src="../../public/mongodb.png" alt="MongoDB" />
+          <img src="/mongodb.png" alt="MongoDB" />
           <span>MongoDB</span>
         </div>
         <div className="tech-icon">
-          <img src="../../public/socket.png" alt="MongoDB" />
+          <img src="/socket.png" alt="MongoDB" />
           <span>Socket.io</span>
         </div>
         {/* Add more techs if needed */}

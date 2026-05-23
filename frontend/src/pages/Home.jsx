@@ -45,7 +45,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-lg-6" data-aos="fade-left">
-                            <img src="../../public/assets/Home1.jpg" alt="IBT Dashboard" className="img-fluid rounded-3 shadow-lg" />
+                            <img src="/assets/Home1.jpg" alt="IBT Dashboard" className="img-fluid rounded-3 shadow-lg" />
                         </div>
                     </div>
                 </div>
@@ -59,19 +59,19 @@ const Home = () => {
                     </div>
                     <div className="row justify-content-center align-items-center">
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="../../public/assets/university1.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/university1.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="../../public/assets/university2.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/university2.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="../../public/assets/university3.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/university3.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center mb-4 mb-md-0">
-                            <img src="../../public/assets/university4.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '150px' }} />
+                            <img src="/assets/university4.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '150px' }} />
                         </div>
                         <div className="col-6 col-md-2 text-center">
-                            <img src="../../public/assets/university5.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
+                            <img src="/assets/university5.png" alt="University Logo" className="img-fluid" style={{ maxHeight: '100px' }} />
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ const Home = () => {
                 <div className="container py-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                            <img src="../../public/assets/workflow.jpg" alt="IBT Dashboard" className="img-fluid img-fluid-rounded" />
+                            <img src="/assets/workflow.jpg" alt="IBT Dashboard" className="img-fluid img-fluid-rounded" />
                         </div>
                         <div className="col-lg-6" data-aos="fade-left">
                             <h2 className="section-title">Streamlined Exam <span className="highlight-text">Workflow</span></h2>
@@ -201,7 +201,7 @@ const Home = () => {
                 <div className="container py-5">
                     <div className="row align-items-center">
                         <div className="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
-                            <img src="../../public/assets/security.jpg" alt="Security Features" className="img-fluid img-fluid-rounded" />
+                            <img src="/assets/security.jpg" alt="Security Features" className="img-fluid img-fluid-rounded" />
                         </div>
                         <div className="col-lg-6 order-lg-1" data-aos="fade-right">
                             <h2 className="section-title">Enterprise-Grade <span className="highlight-text">Security</span></h2>
