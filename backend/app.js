@@ -15,7 +15,10 @@ const snapshotRoutes = require('./routes/snapshotRoutes');
 
 // Middleware
 app.use(express.json()); // Parse incoming JSON payloads
-app.use(cors()); // Enable CORS
+app.use(cors({
+  origin: process.env.CLIENT_URL,
+  credentials: true
+}));
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded data
 app.use(methodOverride('_method')); // Allow HTTP method overrides
 
