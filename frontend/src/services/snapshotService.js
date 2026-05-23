@@ -1,19 +1,23 @@
 // snapshotService.js
 import axios from 'axios';
-import { getMe } from '../services/authService'; // Assuming getMe is a function that fetches the current user
+import { getMe } from '../services/authService';
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 const snapshotService = {
   uploadSnapshot: async (examId, imageBase64) => {
 
     const token = localStorage.getItem('token');
+
     const config = {
-      headers: { Authorization: `Bearer ${token}` }
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
     };
 
-    const user = await getMe();  
-    // console.log('imageBase64:', imageBase64);
+    const user = await getMe();
 
-    await axios.post("http://localhost:3000/snapshots", {
+    await axios.post(`${API_URL}/snapshots`, {
       examId,
       studentId: user._id,
       imageBase64
@@ -22,12 +26,20 @@ const snapshotService = {
 };
 
 const getSnapshotsByExamAndUser = async (examId, userId) => {
+
   const token = localStorage.getItem('token');
+
   const config = {
-    headers: { Authorization: `Bearer ${token}` }
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
   };
 
-  const response = await axios.get(`http://localhost:3000/snapshots/${examId}/${userId}`, config);
+  const response = await axios.get(
+    `${API_URL}/snapshots/${examId}/${userId}`,
+    config
+  );
+
   return response.data;
 };
 
